@@ -2,7 +2,7 @@
 
 .calendar {
   flex-wrap: wrap;
-  gap: 1px;
+  gap: vars.$gap;
   width: calc(
       (vars.$day-size * vars.$columns) + (vars.$gap * (vars.$columns - 1))
     ) + 20px;
@@ -15,8 +15,8 @@
   border: 1px solid #000;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: vars.$day-size;
+  height: vars.$day-size;
   transition-duration: 0.5s;
   display: flex;
 }
